@@ -109,7 +109,7 @@ The tool findings are as follows: {data}"""
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--target", default="/Users/hem/Desktop/Python/git_projects/fitness-dashboard", help="Path to codebase")
+    p.add_argument("--target", required=True, help="Path to codebase")
     p.add_argument("--requirements", default="requirements.txt")
     p.add_argument("--output", default="security_report.md")
     args = p.parse_args()
